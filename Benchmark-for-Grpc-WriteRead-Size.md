@@ -14,16 +14,16 @@ Benchmark File:
 
 Args Table:
 
-> number of concurrent RPC calls ( r )  for each Connection 
-> number of Connections ( c )
-> server write buffer size ( sw )
-> server read buffer size ( sr )
-> client ReadBuffer  ( cr )
-> client WriteBuffer  ( cw )
-> req size in bytes ( req )
-> resp size in bytes ( resp )
+> number of concurrent RPC calls ( r )  for each Connection   
+> number of Connections ( c )   
+> server write buffer size ( sw )   
+> server read buffer size ( sr )   
+> client ReadBuffer  ( cr )   
+> client WriteBuffer  ( cw )   
+> req size in bytes ( req )   
+> resp size in bytes ( resp )   
 
-![buffer](buffer.PNG)
+![buffer](media/buffer.PNG)
 
 ## 1. Relationship between r and sw/sr
 
@@ -76,15 +76,15 @@ Args Table:
 
 **Const Args:**
 
-`r = 1, cr/cw = 128k, req = 1M, resp = 1M, sr = 10`
+`r = 1, cr/cw = 128k, req = 1M, resp = 1M, sr = 0`
 
-![1553222826013](C:\Users\yangdihang\AppData\Roaming\Typora\typora-user-images\1553222826013.png)
+![1553222826013](media/r1_w.png)
 
 ### Relationship between c and sr
 
 **Const Args:**
 
-`r = 1, cr/cw = 128k, req = 1M, resp = 1M, sw = 10`
+`r = 1, cr/cw = 128k, req = 1M, resp = 1M, sw = 0`
 
 ![1553219371119](media/r1_r.png)
 
